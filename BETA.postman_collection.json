@@ -1,0 +1,917 @@
+{
+	"id": "c110c672-9ccb-d563-2378-a9181afd6a0c",
+	"name": "rest api example new copy",
+	"description": "",
+	"order": [
+		"97223e51-8f85-3158-fcf7-3fa48ec3d091",
+		"59ed9746-cc52-4a7e-a4b2-5963b0366d3d",
+		"d8ae899d-a599-41ec-4e0a-a11d8a256cd5",
+		"ffe30fa5-b649-5d48-14f2-6821e8cab52b",
+		"3fb68a10-1b70-59fa-1b2a-4101baffaffe",
+		"b87b8cdf-2bc8-4636-db77-400b6d5cdbc6",
+		"722f0e4e-84f1-7d5e-2f64-7439094b0fbf",
+		"f927dc9c-bc07-7ca4-8c35-0c5c9bbe3128",
+		"229723c4-6f11-38d5-86d7-d1db6555c7e7",
+		"c0b88b84-b16c-f1cc-ebe5-1bc704a6529b",
+		"f60ab43b-66f1-c9c0-c412-c2119ccea08e",
+		"058f7129-0c6a-53d7-c363-798b385d29c0",
+		"07840e13-9c2b-4daa-50bd-b6bce8286477",
+		"f4048695-87fe-08a8-1d1f-5749191a6afb",
+		"a451dc21-dd40-42cf-d57f-d0ff16ca4774",
+		"64674379-f456-990e-a7a7-5d1c5f3bbfe7",
+		"faf5fdc1-c902-81b2-ff34-c5078f4e6641",
+		"7f404df7-9e36-c483-3d0e-0c7cd99f022c",
+		"b18d35d1-9cda-a23e-aa11-65f0c29112a5",
+		"86728e57-5e7d-6a6c-f1a5-25b732147bff",
+		"6a824937-874c-4022-08bb-149915098643",
+		"2672d06f-a090-93f3-c960-13fe77a0d536",
+		"492d4abf-f7bf-0dbf-b087-00b0115f395c",
+		"7dcba1a1-a6ec-91a2-f427-63d0a43abaa9",
+		"04cb06c3-b6ff-995c-c345-b0eb140c720a",
+		"27793ad9-6484-68b6-661a-75e8401796e1",
+		"23eb7626-ba9d-99af-4781-66d81a3cd965",
+		"4cf61151-9669-165d-83d1-e650110d2bbb",
+		"a6143d39-3aca-3a5a-d6d8-e244dda032f3",
+		"76f23894-105f-f9c1-3e9d-8109935a2e32",
+		"5eb1f9b6-db85-f7bd-d998-0e48a96a5ead",
+		"6ba4e7a3-82be-5889-8744-a9be4f16e203",
+		"af9d6859-09cd-0032-8d4e-68eb6478fb05"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 0,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "04cb06c3-b6ff-995c-c345-b0eb140c720a",
+			"name": "add default gw",
+			"description": "Add default gateway",
+			"collectionId": "c110c672-9ccb-d563-2378-a9181afd6a0c",
+			"method": "POST",
+			"headers": "Content-Type: application/json\nX-chkp-sid: {{sid}}",
+			"dataMode": "raw",
+			"data": [],
+			"rawModeData": "{\n\t\"address\": \"4.4.4.4\"\n}",
+			"url": "https://{{ip}}/rest/set-default-gw",
+			"responses": [],
+			"pathVariableData": [],
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				},
+				{
+					"key": "X-chkp-sid",
+					"value": "{{sid}}"
+				}
+			],
+			"collection_id": "c110c672-9ccb-d563-2378-a9181afd6a0c"
+		},
+		{
+			"id": "058f7129-0c6a-53d7-c363-798b385d29c0",
+			"name": "ftw",
+			"description": "",
+			"collectionId": "c110c672-9ccb-d563-2378-a9181afd6a0c",
+			"method": "POST",
+			"headers": "Content-Type: application/json\nX-chkp-sid: {{sid}}",
+			"dataMode": "raw",
+			"data": [],
+			"rawModeData": "{\n\t\"sic-password\":\"aaaa\",\n\t\"cluster-member\":false\n}",
+			"url": "https://{{ip}}/rest/ftw",
+			"responses": [],
+			"pathVariableData": [],
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				},
+				{
+					"key": "X-chkp-sid",
+					"value": "{{sid}}"
+				}
+			],
+			"collection_id": "c110c672-9ccb-d563-2378-a9181afd6a0c"
+		},
+		{
+			"id": "07840e13-9c2b-4daa-50bd-b6bce8286477",
+			"name": "set hostname",
+			"description": "set hostname successfully",
+			"collectionId": "c110c672-9ccb-d563-2378-a9181afd6a0c",
+			"method": "POST",
+			"headers": "Content-Type: application/json\nX-chkp-sid: {{sid}}",
+			"dataMode": "raw",
+			"data": [],
+			"rawModeData": "{\n\t\"name\": \"host\"\n}",
+			"url": "https://{{ip}}/rest/set-hostname",
+			"responses": [],
+			"pathVariableData": [],
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				},
+				{
+					"key": "X-chkp-sid",
+					"value": "{{sid}}"
+				}
+			],
+			"collection_id": "c110c672-9ccb-d563-2378-a9181afd6a0c"
+		},
+		{
+			"id": "229723c4-6f11-38d5-86d7-d1db6555c7e7",
+			"name": "cpstat os",
+			"description": "Get hostname successfully",
+			"collectionId": "c110c672-9ccb-d563-2378-a9181afd6a0c",
+			"method": "POST",
+			"headers": "Content-Type: application/json\nX-chkp-sid: {{sid}}",
+			"dataMode": "raw",
+			"data": [],
+			"rawModeData": "{}",
+			"url": "https://{{ip}}/rest/cpstat/os",
+			"responses": [],
+			"pathVariableData": [],
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				},
+				{
+					"key": "X-chkp-sid",
+					"value": "{{sid}}"
+				}
+			],
+			"collection_id": "c110c672-9ccb-d563-2378-a9181afd6a0c"
+		},
+		{
+			"id": "23eb7626-ba9d-99af-4781-66d81a3cd965",
+			"name": "show routes",
+			"description": "Show routes",
+			"collectionId": "c110c672-9ccb-d563-2378-a9181afd6a0c",
+			"method": "POST",
+			"headers": "Content-Type: application/json\nX-chkp-sid: {{sid}}",
+			"dataMode": "raw",
+			"data": [],
+			"rawModeData": "{}",
+			"url": "https://{{ip}}/rest/show-routes",
+			"responses": [],
+			"pathVariableData": [],
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				},
+				{
+					"key": "X-chkp-sid",
+					"value": "{{sid}}"
+				}
+			],
+			"collection_id": "c110c672-9ccb-d563-2378-a9181afd6a0c"
+		},
+		{
+			"id": "2672d06f-a090-93f3-c960-13fe77a0d536",
+			"name": "show ntp servers",
+			"description": "Show ntp current",
+			"collectionId": "c110c672-9ccb-d563-2378-a9181afd6a0c",
+			"method": "POST",
+			"headers": "Content-Type: application/json\nX-chkp-sid: {{sid}}",
+			"dataMode": "raw",
+			"data": [],
+			"rawModeData": "{}",
+			"url": "https://{{ip}}/rest/show-ntp/servers",
+			"responses": [],
+			"pathVariableData": [],
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				},
+				{
+					"key": "X-chkp-sid",
+					"value": "{{sid}}"
+				}
+			],
+			"collection_id": "c110c672-9ccb-d563-2378-a9181afd6a0c"
+		},
+		{
+			"id": "27793ad9-6484-68b6-661a-75e8401796e1",
+			"name": "set static route",
+			"description": "Add static routes",
+			"collectionId": "c110c672-9ccb-d563-2378-a9181afd6a0c",
+			"method": "POST",
+			"headers": "Content-Type: application/json\nX-chkp-sid: {{sid}}",
+			"dataMode": "raw",
+			"data": [],
+			"rawModeData": "{\n\t\"address\": \"192.168.1.0\",\n\t\"mask-length\":24,\n\t\"nexthop-address\":\"4.4.4.4\",\n\t\"state\": true\n}",
+			"url": "https://{{ip}}/rest/set-static-route",
+			"responses": [],
+			"pathVariableData": [],
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				},
+				{
+					"key": "X-chkp-sid",
+					"value": "{{sid}}"
+				}
+			],
+			"collection_id": "c110c672-9ccb-d563-2378-a9181afd6a0c"
+		},
+		{
+			"id": "3fb68a10-1b70-59fa-1b2a-4101baffaffe",
+			"name": "show bridging groups",
+			"description": "Get hostname successfully",
+			"collectionId": "c110c672-9ccb-d563-2378-a9181afd6a0c",
+			"method": "POST",
+			"headers": "Content-Type: application/json\nX-chkp-sid: {{sid}}",
+			"dataMode": "raw",
+			"data": [],
+			"rawModeData": "{}",
+			"url": "https://{{ip}}/rest/show-bridging-groups",
+			"responses": [],
+			"pathVariableData": [],
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				},
+				{
+					"key": "X-chkp-sid",
+					"value": "{{sid}}"
+				}
+			],
+			"collection_id": "c110c672-9ccb-d563-2378-a9181afd6a0c"
+		},
+		{
+			"id": "492d4abf-f7bf-0dbf-b087-00b0115f395c",
+			"name": "show ntp active",
+			"description": "Show ntp active",
+			"collectionId": "c110c672-9ccb-d563-2378-a9181afd6a0c",
+			"method": "POST",
+			"headers": "Content-Type: application/json\nX-chkp-sid: {{sid}}",
+			"dataMode": "raw",
+			"data": [],
+			"rawModeData": "{}",
+			"url": "https://{{ip}}/rest/show-ntp/state",
+			"responses": [],
+			"pathVariableData": [],
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				},
+				{
+					"key": "X-chkp-sid",
+					"value": "{{sid}}"
+				}
+			],
+			"collection_id": "c110c672-9ccb-d563-2378-a9181afd6a0c"
+		},
+		{
+			"id": "4cf61151-9669-165d-83d1-e650110d2bbb",
+			"name": "show syslog",
+			"description": "Get hostname successfully",
+			"collectionId": "c110c672-9ccb-d563-2378-a9181afd6a0c",
+			"method": "POST",
+			"headers": "Content-Type: application/json\nX-chkp-sid: {{sid}}",
+			"dataMode": "raw",
+			"data": [],
+			"rawModeData": "{\n}",
+			"url": "https://{{ip}}/rest/show-syslog",
+			"responses": [],
+			"pathVariableData": [],
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				},
+				{
+					"key": "X-chkp-sid",
+					"value": "{{sid}}"
+				}
+			],
+			"collection_id": "c110c672-9ccb-d563-2378-a9181afd6a0c"
+		},
+		{
+			"id": "59ed9746-cc52-4a7e-a4b2-5963b0366d3d",
+			"name": "show installer packages",
+			"description": "Show version",
+			"collectionId": "c110c672-9ccb-d563-2378-a9181afd6a0c",
+			"method": "POST",
+			"headers": "Content-Type: application/json\nX-chkp-sid: {{sid}}",
+			"dataMode": "raw",
+			"data": [],
+			"rawModeData": "{}",
+			"url": "https://{{ip}}/rest/show-installer/packages/recommended",
+			"responses": [],
+			"pathVariableData": [],
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				},
+				{
+					"key": "X-chkp-sid",
+					"value": "{{sid}}"
+				}
+			],
+			"collection_id": "c110c672-9ccb-d563-2378-a9181afd6a0c"
+		},
+		{
+			"id": "5eb1f9b6-db85-f7bd-d998-0e48a96a5ead",
+			"name": "show version",
+			"description": "Show version",
+			"collectionId": "c110c672-9ccb-d563-2378-a9181afd6a0c",
+			"method": "POST",
+			"headers": "Content-Type: application/json\nX-chkp-sid: {{sid}}",
+			"dataMode": "raw",
+			"data": [],
+			"rawModeData": "{}",
+			"url": "https://{{ip}}/rest/show-version",
+			"responses": [],
+			"pathVariableData": [],
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				},
+				{
+					"key": "X-chkp-sid",
+					"value": "{{sid}}"
+				}
+			],
+			"collection_id": "c110c672-9ccb-d563-2378-a9181afd6a0c"
+		},
+		{
+			"id": "64674379-f456-990e-a7a7-5d1c5f3bbfe7",
+			"name": "show interface",
+			"description": "Show interface",
+			"collectionId": "c110c672-9ccb-d563-2378-a9181afd6a0c",
+			"method": "POST",
+			"headers": "Content-Type: application/json\nX-chkp-sid: {{sid}}",
+			"dataMode": "raw",
+			"data": [],
+			"rawModeData": "{\n\t\"interface\": \"eth0\"\n}",
+			"url": "https://{{ip}}/rest/show-interface",
+			"responses": [],
+			"pathVariableData": [],
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				},
+				{
+					"key": "X-chkp-sid",
+					"value": "{{sid}}"
+				}
+			],
+			"collection_id": "c110c672-9ccb-d563-2378-a9181afd6a0c"
+		},
+		{
+			"id": "6a824937-874c-4022-08bb-149915098643",
+			"name": "show ntp current",
+			"description": "Show ntp current",
+			"collectionId": "c110c672-9ccb-d563-2378-a9181afd6a0c",
+			"method": "POST",
+			"headers": "Content-Type: application/json\nX-chkp-sid: {{sid}}",
+			"dataMode": "raw",
+			"data": [],
+			"rawModeData": "{}",
+			"url": "https://{{ip}}/rest/show-ntp/current",
+			"responses": [],
+			"pathVariableData": [],
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				},
+				{
+					"key": "X-chkp-sid",
+					"value": "{{sid}}"
+				}
+			],
+			"collection_id": "c110c672-9ccb-d563-2378-a9181afd6a0c"
+		},
+		{
+			"id": "6ba4e7a3-82be-5889-8744-a9be4f16e203",
+			"name": "show version so kernel",
+			"description": "Show version product",
+			"collectionId": "c110c672-9ccb-d563-2378-a9181afd6a0c",
+			"method": "POST",
+			"headers": "Content-Type: application/json\nX-chkp-sid: {{sid}}",
+			"dataMode": "raw",
+			"data": [],
+			"rawModeData": "{\n\t\"type\":\"kernel\"\n}",
+			"url": "https://{{ip}}/rest/show-version/os",
+			"responses": [],
+			"pathVariableData": [],
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				},
+				{
+					"key": "X-chkp-sid",
+					"value": "{{sid}}"
+				}
+			],
+			"collection_id": "c110c672-9ccb-d563-2378-a9181afd6a0c"
+		},
+		{
+			"id": "722f0e4e-84f1-7d5e-2f64-7439094b0fbf",
+			"name": "cphaprob -a if",
+			"description": "",
+			"collectionId": "c110c672-9ccb-d563-2378-a9181afd6a0c",
+			"method": "POST",
+			"headers": "Content-Type: application/json\nX-chkp-sid: {{sid}}",
+			"dataMode": "raw",
+			"data": [],
+			"rawModeData": "{}",
+			"url": "https://{{ip}}/rest/cphaprob/a-if",
+			"responses": [],
+			"pathVariableData": [],
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				},
+				{
+					"key": "X-chkp-sid",
+					"value": "{{sid}}"
+				}
+			],
+			"collection_id": "c110c672-9ccb-d563-2378-a9181afd6a0c"
+		},
+		{
+			"id": "76f23894-105f-f9c1-3e9d-8109935a2e32",
+			"name": "show users",
+			"description": "Get hostname successfully",
+			"collectionId": "c110c672-9ccb-d563-2378-a9181afd6a0c",
+			"method": "POST",
+			"headers": "Content-Type: application/json\nX-chkp-sid: {{sid}}",
+			"dataMode": "raw",
+			"data": [],
+			"rawModeData": "{}",
+			"url": "https://{{ip}}/rest/show-users",
+			"responses": [],
+			"pathVariableData": [],
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				},
+				{
+					"key": "X-chkp-sid",
+					"value": "{{sid}}"
+				}
+			],
+			"collection_id": "c110c672-9ccb-d563-2378-a9181afd6a0c"
+		},
+		{
+			"id": "7dcba1a1-a6ec-91a2-f427-63d0a43abaa9",
+			"name": "cpview",
+			"description": "Show routes",
+			"collectionId": "c110c672-9ccb-d563-2378-a9181afd6a0c",
+			"method": "POST",
+			"headers": "Content-Type: application/json\nX-chkp-sid: {{sid}}",
+			"dataMode": "raw",
+			"data": [],
+			"rawModeData": "{}",
+			"url": "https://{{ip}}/rest/cpview",
+			"responses": [],
+			"pathVariableData": [],
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				},
+				{
+					"key": "X-chkp-sid",
+					"value": "{{sid}}"
+				}
+			],
+			"collection_id": "c110c672-9ccb-d563-2378-a9181afd6a0c"
+		},
+		{
+			"id": "7f404df7-9e36-c483-3d0e-0c7cd99f022c",
+			"name": "set lldp enable",
+			"description": "set lldp on/off (when setting on it will be recieve mode only)",
+			"collectionId": "c110c672-9ccb-d563-2378-a9181afd6a0c",
+			"method": "POST",
+			"headers": "Content-Type: application/json\nX-chkp-sid: {{sid}}",
+			"dataMode": "raw",
+			"data": [],
+			"rawModeData": "{}",
+			"url": "https://{{ip}}/rest/set-lldp/on",
+			"responses": [],
+			"pathVariableData": [],
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				},
+				{
+					"key": "X-chkp-sid",
+					"value": "{{sid}}"
+				}
+			],
+			"collection_id": "c110c672-9ccb-d563-2378-a9181afd6a0c"
+		},
+		{
+			"id": "86728e57-5e7d-6a6c-f1a5-25b732147bff",
+			"name": "set ntp primary",
+			"description": "Set ntp primary",
+			"collectionId": "c110c672-9ccb-d563-2378-a9181afd6a0c",
+			"method": "POST",
+			"headers": "Content-Type: application/json\nX-chkp-sid: {{sid}}",
+			"dataMode": "raw",
+			"data": [],
+			"rawModeData": "{\n\t\"host\":\"1.2.3.4\",\n\t\"version\":4\n}",
+			"url": "https://{{ip}}/rest/set-ntp/primary",
+			"responses": [],
+			"pathVariableData": [],
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				},
+				{
+					"key": "X-chkp-sid",
+					"value": "{{sid}}"
+				}
+			],
+			"collection_id": "c110c672-9ccb-d563-2378-a9181afd6a0c"
+		},
+		{
+			"id": "97223e51-8f85-3158-fcf7-3fa48ec3d091",
+			"name": "login",
+			"description": "Login successfully",
+			"collectionId": "c110c672-9ccb-d563-2378-a9181afd6a0c",
+			"method": "POST",
+			"headers": "Content-Type: application/json\n// : ",
+			"dataMode": "raw",
+			"data": [],
+			"rawModeData": "{\n\t\"user\":\"admin\",\n\t\"password\":\"zubur1\"\n}",
+			"tests": "var jsonData = JSON.parse(responseBody);\npostman.setGlobalVariable(\"sid\", jsonData.sid);\nconsole.log(jsonData.sid);\n\n",
+			"preRequestScript": "",
+			"url": "https://{{ip}}/rest/login",
+			"responses": [],
+			"pathVariableData": [],
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				},
+				{
+					"key": "",
+					"value": "",
+					"enabled": false
+				}
+			],
+			"collection_id": "c110c672-9ccb-d563-2378-a9181afd6a0c"
+		},
+		{
+			"id": "a451dc21-dd40-42cf-d57f-d0ff16ca4774",
+			"name": "set interface",
+			"description": "Set interface",
+			"collectionId": "c110c672-9ccb-d563-2378-a9181afd6a0c",
+			"method": "POST",
+			"headers": "Content-Type: application/json\nX-chkp-sid: {{sid}}",
+			"dataMode": "raw",
+			"data": [],
+			"rawModeData": "{\n\t\"interface\": \"eth1\",\n\t\"ipv4-address\":\"2.2.2.3\",\n\t\"mask-length\":24\n}",
+			"url": "https://{{ip}}/rest/set-interface",
+			"responses": [],
+			"pathVariableData": [],
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				},
+				{
+					"key": "X-chkp-sid",
+					"value": "{{sid}}"
+				}
+			],
+			"collection_id": "c110c672-9ccb-d563-2378-a9181afd6a0c"
+		},
+		{
+			"id": "a6143d39-3aca-3a5a-d6d8-e244dda032f3",
+			"name": "show user",
+			"description": "Get hostname successfully",
+			"collectionId": "c110c672-9ccb-d563-2378-a9181afd6a0c",
+			"method": "POST",
+			"headers": "Content-Type: application/json\nX-chkp-sid: {{sid}}",
+			"dataMode": "raw",
+			"data": [],
+			"rawModeData": "{\n\t\"username\":\"admin\"\n}",
+			"url": "https://{{ip}}/rest/show-user",
+			"responses": [],
+			"pathVariableData": [],
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				},
+				{
+					"key": "X-chkp-sid",
+					"value": "{{sid}}"
+				}
+			],
+			"collection_id": "c110c672-9ccb-d563-2378-a9181afd6a0c"
+		},
+		{
+			"id": "af9d6859-09cd-0032-8d4e-68eb6478fb05",
+			"name": "show version product",
+			"description": "Show version product",
+			"collectionId": "c110c672-9ccb-d563-2378-a9181afd6a0c",
+			"method": "POST",
+			"headers": "Content-Type: application/json\nX-chkp-sid: {{sid}}",
+			"dataMode": "raw",
+			"data": [],
+			"rawModeData": "{}",
+			"url": "https://{{ip}}/rest/show-version/product",
+			"responses": [],
+			"pathVariableData": [],
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				},
+				{
+					"key": "X-chkp-sid",
+					"value": "{{sid}}"
+				}
+			],
+			"collection_id": "c110c672-9ccb-d563-2378-a9181afd6a0c"
+		},
+		{
+			"id": "b18d35d1-9cda-a23e-aa11-65f0c29112a5",
+			"name": "set ntp active",
+			"description": "Set ntp active",
+			"collectionId": "c110c672-9ccb-d563-2378-a9181afd6a0c",
+			"method": "POST",
+			"headers": "Content-Type: application/json\nX-chkp-sid: {{sid}}",
+			"dataMode": "raw",
+			"data": [],
+			"rawModeData": "{\n\t\"state\":false\n}",
+			"url": "https://{{ip}}/rest/set-ntp/state",
+			"responses": [],
+			"pathVariableData": [],
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				},
+				{
+					"key": "X-chkp-sid",
+					"value": "{{sid}}"
+				}
+			],
+			"collection_id": "c110c672-9ccb-d563-2378-a9181afd6a0c"
+		},
+		{
+			"id": "b87b8cdf-2bc8-4636-db77-400b6d5cdbc6",
+			"name": "show bonding groups",
+			"description": "Get hostname successfully",
+			"collectionId": "c110c672-9ccb-d563-2378-a9181afd6a0c",
+			"method": "POST",
+			"headers": "Content-Type: application/json\nX-chkp-sid: {{sid}}",
+			"dataMode": "raw",
+			"data": [],
+			"rawModeData": "{}",
+			"url": "https://{{ip}}/rest/show-bonding-groups",
+			"responses": [],
+			"pathVariableData": [],
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				},
+				{
+					"key": "X-chkp-sid",
+					"value": "{{sid}}"
+				}
+			],
+			"collection_id": "c110c672-9ccb-d563-2378-a9181afd6a0c"
+		},
+		{
+			"id": "c0b88b84-b16c-f1cc-ebe5-1bc704a6529b",
+			"name": "cpview overview",
+			"description": "Show routes",
+			"collectionId": "c110c672-9ccb-d563-2378-a9181afd6a0c",
+			"method": "POST",
+			"headers": "Content-Type: application/json\nX-chkp-sid: {{sid}}",
+			"dataMode": "raw",
+			"data": [],
+			"rawModeData": "{}",
+			"url": "https://{{ip}}/rest/cpview/overview",
+			"responses": [],
+			"pathVariableData": [],
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				},
+				{
+					"key": "X-chkp-sid",
+					"value": "{{sid}}"
+				}
+			],
+			"collection_id": "c110c672-9ccb-d563-2378-a9181afd6a0c"
+		},
+		{
+			"id": "d8ae899d-a599-41ec-4e0a-a11d8a256cd5",
+			"name": "show asset",
+			"description": "Show version",
+			"collectionId": "c110c672-9ccb-d563-2378-a9181afd6a0c",
+			"method": "POST",
+			"headers": "Content-Type: application/json\nX-chkp-sid: {{sid}}",
+			"dataMode": "raw",
+			"data": [],
+			"rawModeData": "{}",
+			"url": "https://{{ip}}/rest/show-asset",
+			"responses": [],
+			"pathVariableData": [],
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				},
+				{
+					"key": "X-chkp-sid",
+					"value": "{{sid}}"
+				}
+			],
+			"collection_id": "c110c672-9ccb-d563-2378-a9181afd6a0c"
+		},
+		{
+			"id": "f4048695-87fe-08a8-1d1f-5749191a6afb",
+			"name": "get hostname",
+			"description": "Get hostname successfully",
+			"collectionId": "c110c672-9ccb-d563-2378-a9181afd6a0c",
+			"method": "POST",
+			"headers": "Content-Type: application/json\nX-chkp-sid: {{sid}}",
+			"dataMode": "raw",
+			"data": [],
+			"rawModeData": "{}",
+			"url": "https://{{ip}}/rest/show-hostname",
+			"responses": [],
+			"pathVariableData": [],
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				},
+				{
+					"key": "X-chkp-sid",
+					"value": "{{sid}}"
+				}
+			],
+			"collection_id": "c110c672-9ccb-d563-2378-a9181afd6a0c"
+		},
+		{
+			"id": "f60ab43b-66f1-c9c0-c412-c2119ccea08e",
+			"name": "cpview network traffic",
+			"description": "",
+			"collectionId": "c110c672-9ccb-d563-2378-a9181afd6a0c",
+			"method": "POST",
+			"headers": "Content-Type: application/json\nX-chkp-sid: {{sid}}",
+			"dataMode": "raw",
+			"data": [],
+			"rawModeData": "{}",
+			"url": "https://{{ip}}/rest/cpview/network-traffic",
+			"responses": [],
+			"pathVariableData": [],
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				},
+				{
+					"key": "X-chkp-sid",
+					"value": "{{sid}}"
+				}
+			],
+			"collection_id": "c110c672-9ccb-d563-2378-a9181afd6a0c"
+		},
+		{
+			"id": "f927dc9c-bc07-7ca4-8c35-0c5c9bbe3128",
+			"name": "cphaprob list",
+			"description": "",
+			"collectionId": "c110c672-9ccb-d563-2378-a9181afd6a0c",
+			"method": "POST",
+			"headers": "Content-Type: application/json\nX-chkp-sid: {{sid}}",
+			"dataMode": "raw",
+			"data": [],
+			"rawModeData": "{}",
+			"url": "https://{{ip}}/rest/cphaprob/list",
+			"responses": [],
+			"pathVariableData": [],
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				},
+				{
+					"key": "X-chkp-sid",
+					"value": "{{sid}}"
+				}
+			],
+			"collection_id": "c110c672-9ccb-d563-2378-a9181afd6a0c"
+		},
+		{
+			"id": "faf5fdc1-c902-81b2-ff34-c5078f4e6641",
+			"headers": "Content-Type: application/json\nX-chkp-sid: {{sid}}\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "X-chkp-sid",
+					"value": "{{sid}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://{{ip}}/rest/show-interfaces",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1520517738347,
+			"name": "show interfaces",
+			"description": "Show interfaces",
+			"collectionId": "c110c672-9ccb-d563-2378-a9181afd6a0c",
+			"responses": [],
+			"rawModeData": "{}"
+		},
+		{
+			"id": "ffe30fa5-b649-5d48-14f2-6821e8cab52b",
+			"name": "show banner",
+			"description": "Get hostname successfully",
+			"collectionId": "c110c672-9ccb-d563-2378-a9181afd6a0c",
+			"method": "POST",
+			"headers": "Content-Type: application/json\nX-chkp-sid: {{sid}}",
+			"dataMode": "raw",
+			"data": [],
+			"rawModeData": "{}",
+			"url": "https://{{ip}}/rest/show-message/banner",
+			"responses": [],
+			"pathVariableData": [],
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				},
+				{
+					"key": "X-chkp-sid",
+					"value": "{{sid}}"
+				}
+			],
+			"collection_id": "c110c672-9ccb-d563-2378-a9181afd6a0c"
+		}
+	]
+}

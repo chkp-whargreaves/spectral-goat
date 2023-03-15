@@ -1,0 +1,115 @@
+---
+- hosts: GW1
+  connection: local
+  tasks:
+  - name: "login"
+    check_point_mgmt:
+      command: login
+      parameters:
+        username: "{{mgmt_user}}"
+        password: "{{mgmt_password}}"
+        management: "{{inventory_hostname}}"
+        api: "gaia_api"
+      fingerprint: "13:18:35:76:3D:91:98:3A:DC:8E:01:E7:78:FA:50:EB:9C:93:AE:42"
+    register: login_response
+
+  - name: "show ntp servers"
+    check_point_mgmt:
+      command: show-ntp/servers
+      parameters:
+        api: "gaia_api"
+      session-data: "{{ login_response }}"
+      
+  - name: "show ntp state"
+    check_point_mgmt:
+      command: show-ntp/state
+      parameters:
+        api: "gaia_api"
+      session-data: "{{ login_response }}"
+      
+  - name: "set ntp primary"
+    check_point_mgmt:
+      command: set-ntp/primary
+      parameters:
+        host: "8.8.8.8"
+        version: "3"
+        api: "gaia_api"
+        modified: "on"
+      session-data: "{{ login_response }}"
+
+  - name: "set ntp active on"
+    check_point_mgmt:
+      command: set-ntp/state
+      parameters:
+        state: "true"
+        api: "gaia_api"
+        modified: "on"
+      session-data: "{{ login_response }}"
+
+  - name: "set ntp active off"
+    check_point_mgmt:
+      command: set-ntp/state
+      parameters:
+        state: "false"
+        api: "gaia_api"
+        modified: "on"
+      session-data: "{{ login_response }}"
+
+  - name: "set ntp active off"
+    check_point_mgmt:
+      command: set-ntp/state
+      parameters:
+        state: "false"
+        api: "gaia_api"
+        modified: "on"
+      session-data: "{{ login_response }}"
+  
+  - name: "show routes"
+    check_point_mgmt:
+      command: show-routes
+      parameters:
+        api: "gaia_api"
+      session-data: "{{ login_response }}"
+
+  - name: "add static route"
+    check_point_mgmt:
+      command: set-static-route
+      parameters:
+        address: "192.168.1.0"
+        mask-length: "24"
+        nexthop-address: "4.4.4.4"
+        state: "true"
+        api: "gaia_api"
+        modified: "on"
+      session-data: "{{ login_response }}"
+
+  - name: "set user"
+    check_point_mgmt:
+      command: set-user
+      parameters:
+        username: "bla"
+        uid: "301"
+        api: "gaia_api"
+        modified: "on"
+      session-data: "{{ login_response }}"
+      
+  - name: "set user"
+    check_point_mgmt:
+      command: set-user
+      parameters:
+        username: "bla"
+        uid: "305"
+        api: "gaia_api"
+        modified: "on"
+      session-data: "{{ login_response }}"
+
+  - name: "set interface eth2"
+    check_point_mgmt:
+      command: set-interface
+      parameters:
+        interface: "eth2"
+        ipv4-address: "2.2.2.3"
+        mask-length: "24"
+        api: "gaia_api"
+        modified: "on"
+      session-data: "{{ login_response }}"
